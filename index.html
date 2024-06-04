@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Firebase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="contenedor">
+    <main>
+        <form id="#form" class="formulario" action="#">
+            <label for="name">Nombre</label>
+            <input type="text" placeholder="Tu nombre" id="name" name="name">
+            <label for="email">Nombre</label>
+            <input type="email" placeholder="Tu email" id="email" name="email">
+            <label for="img">Url Imagen</label>
+            <input type="text" id="img" name="img" placeholder="Copia Url">
+            <textarea name="Mensaje" id="mensaje" placeholder="Tu mensaje"></textarea>
+            <input type="submit" value="Enviar Formulario">
+        </form>
+        <section class="botones">
+            <button id="deleteAll">Delete All</button>
+            <button id="delete">Delete</button>
+        </section>
+        <div></div>
+    </main>
+    
+   <footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+   </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
